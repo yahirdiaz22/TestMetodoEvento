@@ -18,7 +18,7 @@ namespace TestMetodoEvento
         {
             InitializeComponent();
         }
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -39,11 +39,47 @@ namespace TestMetodoEvento
                     {
                         break;
                     }
-                    //operacion = textoBoton;
                     valor1 = double.Parse(lblNumeros.Text);
                     double resultado = Math.Sqrt(valor1);
-                    lblNumeros.Text = resultado+"";
+                    lblNumeros.Text = resultado + "";
                     break;
+                case "Tan":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultadoTan = Math.Tan(valor1);
+                    lblNumeros.Text = resultadoTan + "";
+                    break;
+                case "Sin":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultadoSin = Math.Sin(valor1);
+                    lblNumeros.Text = resultadoSin + "";
+                    break;
+                case "Abs":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultadoAbs = Math.Abs(valor1);
+                    lblNumeros.Text = resultadoAbs + "";
+                    break;
+                case "Cos":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultadoCos = Math.Cos(valor1);
+                    lblNumeros.Text = resultadoCos + "";
+                    break;
+
                 case "+":
                     if (lblNumeros.Text == "")
                     {
